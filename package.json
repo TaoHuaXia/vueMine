@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "cross-env": "^5.2.0",
     "webpack": "^4.33.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "cross-env NODE_ENV=development node server.js",
+    "build": "cross-env NODE_ENV="
   },
   "author": "",
   "license": "ISC"
