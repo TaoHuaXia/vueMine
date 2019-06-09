@@ -3,15 +3,32 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "vue": "^2.6.10"
+  },
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/plugin-transform-for-of": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
     "cross-env": "^5.2.0",
-    "webpack": "^4.33.0"
+    "css-loader": "^2.1.1",
+    "file-loader": "^4.0.0",
+    "less-loader": "^5.0.0",
+    "postcss-loader": "^3.0.0",
+    "scss-loader": "0.0.1",
+    "url-loader": "^2.0.0",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "webpack": "^4.33.0",
+    "webpack-dev-server": "^3.7.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=development node server.js",
-    "build": "cross-env NODE_ENV="
+    "build": "cross-env NODE_ENV=production node server.js"
   },
   "author": "",
   "license": "ISC"
